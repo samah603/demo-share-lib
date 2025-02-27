@@ -16,4 +16,4 @@ jobs:
     
       - name: Check
         run: |
-        echo "HOST_IP from Action: $result"
+            echo "HOST_IP from Action: $result"
