@@ -10,7 +10,8 @@ jobs:
       name: dev
     steps:
       - name: Call Share Action from another repository
-        uses: Beezzbank/action-lab/.github/actions@main 
+        # uses: Beezzbank/action-lab/.github/actions@main
+        uses: ./.github/workflows/_reuseable-agent-retry.yaml
         with:
           HOST_IP: ${{ vars.HOST_IP }}
     
